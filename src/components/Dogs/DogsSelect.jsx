@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import getBreeds from '../../helper/getBreeds';
 
-//1
+//1 / paso prop que es una función 
 const DogsSelect = ( { updateDogImage }) => {
 
   // creo un estado 

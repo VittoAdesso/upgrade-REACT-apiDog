@@ -3,6 +3,7 @@ import React, { useState, useEffect} from 'react';
 import DogsSelect from './components/Dogs/DogsSelect';
 import CarDogs from './components/CarDogs/CarDogs';
 import getDogImages from './helper/getDogImages';
+
 // import NavBar from './components/NavBar/NavBar';
 
 
@@ -37,6 +38,8 @@ function App() {
   return (
     <div className="app">
       {/* <NavBar/> */}
+
+      {/* <ListBreeds/> */}
       <DogsSelect updateDogImage={updateDogImage}/>
       {/* paso atributo dog al componente  */}
       <CarDogs dog={ dog } />
