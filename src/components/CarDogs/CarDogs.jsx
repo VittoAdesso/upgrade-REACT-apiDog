@@ -1,7 +1,5 @@
-
 // le paso de prop dog, que es la constante que creé en app-jsx
 const CarDogs = ( { dog }) => {
-
 
   return (
     <div className="card">

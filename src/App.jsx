@@ -1,11 +1,10 @@
 import React, { useState, useEffect} from 'react';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
 
 import DogsSelect from './components/Dogs/DogsSelect';
 import CarDogs from './components/CarDogs/CarDogs';
 import getDogImages from './helper/getDogImages';
-
-// import NavBar from './components/NavBar/NavBar';
-
 
 
 // 2 creamos una nueva constante para usarla de inicio de estado
@@ -36,15 +35,22 @@ function App() {
   }, [] ); 
     
   return (
-    <div className="app">
-      {/* <NavBar/> */}
+    <>
+      <Routes>
 
-      {/* <ListBreeds/> */}
-      <DogsSelect updateDogImage={updateDogImage}/>
-      {/* paso atributo dog al componente  */}
-      <CarDogs dog={ dog } />
-      
-    </div>
+        <Route path="/" element={ <NavBar /> }/>
+        <Route path="/select" element={ 
+          <div className="app">
+          <DogsSelect updateDogImage={ updateDogImage }/>
+          <CarDogs dog={ dog } />
+          </div>  
+        }/>
+          {/* <Route path="/favorite" element={ <div> */}
+            {/* <ImagesDogs  /> */}
+          {/* </div>} /> */}
+
+      </Routes>
+      </>
   );
 }
 

@@ -29,7 +29,6 @@ const DogsSelect = ( { updateDogImage }) => {
   }
 
   return (
-
   
     // todo onClick y onChange lleva function flecha
     //4 ahora le doy la función de update que está en app.jsx , también bajada en props que cada vez que cambie  de nombre me cambie imagen 
@@ -42,9 +41,7 @@ const DogsSelect = ( { updateDogImage }) => {
       {breed.name} 
       </option>
     ))}
-      
-  
-        
+
     </select>
   )
 }
