@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar';
 import DogsSelect from './components/Dogs/DogsSelect';
 import CarDogs from './components/CarDogs/CarDogs';
 import getDogImages from './helper/getDogImages';
+import ImagesDogs from './components/ImagesDogs/ImagesDogs';
 
 
 // 2 creamos una nueva constante para usarla de inicio de estado
@@ -36,18 +37,19 @@ function App() {
     
   return (
     <>
+
       <Routes>
 
-        <Route path="/" element={ <NavBar /> }/>
+        <Route path="/" element={  <NavBar /> }/> 
         <Route path="/select" element={ 
           <div className="app">
           <DogsSelect updateDogImage={ updateDogImage }/>
           <CarDogs dog={ dog } />
           </div>  
         }/>
-          {/* <Route path="/favorite" element={ <div> */}
-            {/* <ImagesDogs  /> */}
-          {/* </div>} /> */}
+       <Route path="/favorite" element={ <div> 
+        <ImagesDogs  /> 
+        </div>} /> 
 
       </Routes>
       </>

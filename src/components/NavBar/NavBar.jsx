@@ -8,6 +8,7 @@ const NavBar = () => {
       <button>Login</button>
       <button>Listado</button>
       <button>Favorite breed</button>
+      
     </div>
   )
 }
