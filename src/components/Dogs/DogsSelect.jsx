@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import getBreeds from '../../helper/getBreeds';
+import { Link } from 'react-router-dom';
 
 //1 / paso prop que es una función 
 const DogsSelect = ( { updateDogImage }) => {
@@ -29,9 +30,14 @@ const DogsSelect = ( { updateDogImage }) => {
   }
 
   return (
-  
-    // todo onClick y onChange lleva function flecha
-    //4 ahora le doy la función de update que está en app.jsx , también bajada en props que cada vez que cambie  de nombre me cambie imagen 
+    
+    <>
+    <Link to="/">
+      Home
+    </Link>
+    
+      {/* todo onClick y onChange lleva function flecha
+    4 ahora le doy la función de update que está en app.jsx , también bajada en props que cada vez que cambie  de nombre me cambie imagen  */}
     <select onChange={(e)=> updateDogImage(e.target.value) }>
 
     {/* mapeo el array de objetos, que quiero que me devuelva resultados por cada vuelta  */}
@@ -43,6 +49,7 @@ const DogsSelect = ( { updateDogImage }) => {
     ))}
 
     </select>
+    </>
   )
 }
 

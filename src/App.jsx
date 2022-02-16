@@ -47,8 +47,10 @@ function App() {
           <CarDogs dog={ dog } />
           </div>  
         }/>
-       <Route path="/favorite" element={ <div> 
+       <Route path="/breeds" element={ <div> 
         <ImagesDogs  /> 
+
+        {/* ver si pongo un enlace a favorito */}
         </div>} /> 
 
       </Routes>

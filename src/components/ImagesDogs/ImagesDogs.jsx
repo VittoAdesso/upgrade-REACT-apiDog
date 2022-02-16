@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import  './styles.scss'; 
 
 const PruebaApi = () => {
 
@@ -6,7 +7,7 @@ const PruebaApi = () => {
     
     useEffect(() => {
       // url que me indica la api, que me dará tooodas la imagenes, pero VITTORIO, mira luego de search, lñe pones ?limit=# que yo quiera, para me pinte tanrto como quiera 
-        fetch('https://api.thedogapi.com/v1/images/search?limit=100')
+        fetch('https://api.thedogapi.com/v1/images/search?limit=20')
             .then(res => res.json())
             .then((imagenes) =>{
                 setImage(imagenes);
@@ -14,7 +15,7 @@ const PruebaApi = () => {
     }, [])
 
    return (
-    <div>
+    <div className='listImages'>
 
     {/* siempre poner la lista de imagenes fuera, y el map, me va a crear listado de imagenes, tanto como le pida */}
     {/* entra en mi array de vueltas picture.id = y me pinta una imagen por ByteLengthQueuingStrategy, hasta llegar al limiot que le puse arriba  */}
