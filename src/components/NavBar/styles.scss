@@ -1,0 +1,25 @@
+// voy a usar BEM, block element modify llamando a hijos con doble __ para las claseses y dentro de llaves en vez de llamar el título completo, llamo con el and y ___ mira ejemplos 
+
+.nav-bar{
+    background-color: antiquewhite;
+    min-height: 90px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+        margin: 0 8px;
+    }
+}
+
+
+.image-ppal{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 30px;
+
+}

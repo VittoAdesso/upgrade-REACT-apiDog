@@ -7,6 +7,8 @@ import CarDogs from './components/CarDogs/CarDogs';
 import getDogImages from './helper/getDogImages';
 import ImagesDogs from './components/ImagesDogs/ImagesDogs';
 
+import negro2 from '../src/components/images/AQUILES2.jpeg'; // gives image path, así llamo mi imagen 
+
 
 // 2 creamos una nueva constante para usarla de inicio de estado
 const initialDog = {
@@ -45,13 +47,10 @@ function App() {
           <div className="app">
           <DogsSelect updateDogImage={ updateDogImage }/>
           <CarDogs dog={ dog } />
-          </div>  
-        }/>
-       <Route path="/breeds" element={ <div> 
-        <ImagesDogs  /> 
+          </div> }/>
+        <Route path="/breeds" element={ <div> <ImagesDogs  /> </div>} /> 
+        <Route path="/favorite" element={  <img src={ negro2 } alt="Negro2" /> } /> 
 
-        {/* ver si pongo un enlace a favorito */}
-        </div>} /> 
 
       </Routes>
       </>

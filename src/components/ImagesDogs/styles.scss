@@ -8,7 +8,16 @@
     
 }
 
-ul{
+li{
+    list-style: none;
+    margin: 20px 10px 0 50px; 
+    width: 30%;
     display: flex;
-    justify-content: center;
+    display: inline-block; 
+
+}
+
+.breeds-img{
+
+    width: 60%;
 }
