@@ -1,7 +1,6 @@
 
 // llamaré los datos de las razos breeds con la url de la api y un async await 
 const getDogImages = async (breedId) => {
-
   // comprobación antes de las llamadas con ternario 
 
   const url = !breedId || breedId === 0 
@@ -23,16 +22,13 @@ const getDogImages = async (breedId) => {
         }
     }
 
-
     // lo formateo como la api tiene estructura
     const dogImage = {
     image, 
     breed
     }
-
     // devuéveme el restultado
   return dogImage; 
-  
-}
+  }
 
 export default getDogImages; 
