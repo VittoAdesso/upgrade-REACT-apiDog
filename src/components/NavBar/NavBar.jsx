@@ -19,15 +19,15 @@ const NavBar = () => {
           </Link>
         
           <Link className="nav-bar__link" to="/select">
-            Listado
+            List all breeds
           </Link>
           
           <Link className="nav-bar__link" to="/breeds">
-            Some breeds
+            Some pictures of breeds
           </Link>
 
           <Link className="nav-bar__link" to="/favorite">
-            Favorite breed
+            My favorite breed
           </Link>
       
       </div>

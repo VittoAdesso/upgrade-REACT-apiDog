@@ -27,27 +27,29 @@ const DogsSelect = ( { updateDogImage }) => {
       })
   }
 
-  return (
+    return (      
      <>
-        <Link to="/">
-          Home
-        </Link>
-      
-        {/* todo onClick y onChange lleva function flecha
-      4 ahora le doy la función de update que está en app.jsx , también bajada en props que cada vez que cambie  de nombre me cambie imagen  */}
-        <select onChange={(e)=> updateDogImage(e.target.value) }>
+          <Link to="/">
+            Home
+          </Link>
+        
+          {/* todo onClick y onChange lleva function flecha
+        4 ahora le doy la función de update que está en app.jsx , también bajada en props que cada vez que cambie  de nombre me cambie imagen  */}
+          <select onChange={(e)=> updateDogImage(e.target.value) }>
 
-        {/* mapeo el array de objetos, que quiero que me devuelva resultados por cada vuelta  */}
-        {/* recuerda que estoy mapeando el valor de breeds, y cuando entra en el array de objetos, siempre llamo breeds. su isElementOfType. Ojo! Recuerda ponerl la key, que será lo que le diferenciará del resto de selecciones   */}
-        { breeds.map(breed => (
-        <option value={breed.id} key={breed.id} > 
-          {breed.name} 
-          </option>
-        ))}
+          {/* mapeo el array de objetos, que quiero que me devuelva resultados por cada vuelta  */}
+          {/* recuerda que estoy mapeando el valor de breeds, y cuando entra en el array de objetos, siempre llamo breeds. su isElementOfType. Ojo! Recuerda ponerl la key, que será lo que le diferenciará del resto de selecciones   */}
+
+          { breeds.map(breed => (
+          <option value={breed.id} key={breed.id} > 
+              {breed.name} 
+            </option>
+          ))}
 
         </select>
-      </>
-  )
-}
+
+    </>
+    )
+  }
 
 export default DogsSelect; 

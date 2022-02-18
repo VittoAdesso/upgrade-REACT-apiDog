@@ -51,7 +51,6 @@ function App() {
         <Route path="/breeds" element={ <div> <ImagesDogs  /> </div>} /> 
         <Route path="/favorite" element={  <img src={ negro2 } alt="Negro2" /> } /> 
 
-
       </Routes>
       </>
   );
