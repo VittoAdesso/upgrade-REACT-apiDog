@@ -1,7 +1,7 @@
 // llamaré los datos de las razos breeds con la url de la api y un async await 
 const getBreeds = async () => {
 
-        // asigno url
+     // asigno url
     const url = "https://api.thedogapi.com/v1/breeds"; 
     // le doy valor a la respuesta, que espere una llamada 
     const res = await fetch(url); 

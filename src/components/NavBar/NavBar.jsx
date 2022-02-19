@@ -5,15 +5,14 @@ import { Link } from 'react-router-dom';
 import negro from '../images/aquiles.jpg'; // gives image path, así llamo mi imagen 
 
 const NavBar = () => {
-
 // para hacer links que me lleven donde quiera. 1. importo como arriba, 2, les pongo etiquetas y le digo la ruta y ya está!!!! 
-
 // ver como le pongo los botones 
 // voy a usar BEM, block element modify llamando a hijos con doble __ para las claseses, en style s eve mejor 
   return (
     <>
 
       <div className='nav-bar'>
+
           <Link className="nav-bar__link" to="/">
             Home
           </Link>

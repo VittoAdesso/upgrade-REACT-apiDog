@@ -15,18 +15,18 @@ const getDogImages = async (breedId) => {
     let { url: image , breeds: [breed]} = data; 
 
 // compruebo que todo lo que no tenga raza sea ramdon, así no me da error 
-    if( !breed){
-        breed = { 
-          id: 0, 
-          name: 'random'
-        }
+      if( !breed){
+          breed = { 
+            id: 0, 
+            name: 'random'
+          }
     }
 
     // lo formateo como la api tiene estructura
-    const dogImage = {
-    image, 
-    breed
-    }
+      const dogImage = {
+      image, 
+      breed
+      }
     // devuéveme el restultado
   return dogImage; 
   }
