@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #222;
+  // para quitar el subrayado de la navegación, ya que todo link para react es un vínculo o <a> , entonces me sale subrayado, y se lo quito de esa manera, diciendo que no quiero en ninguna ruta de link el subrayado 
   text-decoration: none;
 }
 
